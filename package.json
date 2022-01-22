@@ -25,6 +25,7 @@
     "express": "^4.17.2",
     "faker": "^5.5.3",
     "joi": "^17.5.0",
+    "joi-objectid": "^4.0.2",
     "mongoose": "^6.1.7",
     "morgan": "^1.10.0"
   }
