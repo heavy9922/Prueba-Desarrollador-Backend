@@ -2,7 +2,7 @@ const joi = require('joi');
 joi.objectId = require('joi-objectid')(joi);
 
 const id = joi.objectId();
-const name = joi.string().min(3).max(15);
+const name = joi.string().min(3).max(30);
 const price = joi.number().integer().min(10);
 const image = joi.string().uri();
 const description = joi.string().min(3).max(100);
