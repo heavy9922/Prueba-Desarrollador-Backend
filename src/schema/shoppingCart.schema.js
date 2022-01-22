@@ -6,8 +6,10 @@ const quantity = joi.number().min(1);
 
 const createshoppingCartSchema = joi.object({
   fullName: fullName.required(),
-  products: products.required(),
+  products: products,
   quantity: quantity.required(),
 });
 
-module.exports = { createshoppingCartSchema };
+module.exports = {
+  createshoppingCartSchema,
+};

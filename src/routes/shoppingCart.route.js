@@ -1,7 +1,9 @@
 const express = require('express');
 const shoppingCartServices = require('../services/shoppingCart.services');
 const validatorHandler = require('../middlewares/validator.handler');
-const { createshoppingCartSchema } = require('../schema/shoppingCart.schema');
+const {
+  createshoppingCartSchema,
+} = require('../schema/shoppingCart.schema');
 
 const router = express.Router();
 const services = new shoppingCartServices();
@@ -12,12 +14,26 @@ router.get('/', async (req, res) => {
 });
 
 router.post(
-  '/',
+  '/:idProduct',
   validatorHandler(createshoppingCartSchema, 'body'),
   async (req, res) => {
+    const { idProduct } = req.params;
     const body = req.body;
-    const newCart = await services.create(body);
+    const newCart = await services.create(body, idProduct);
     res.status(201).json(newCart);
+  }
+);
+
+router.put(
+  '/:id/product/:idProduct',
+  async (req, res) => {
+    try {
+      const { id, idProduct  } = req.params;
+      const product = await services.update(id, idProduct );
+      res.json(product);
+    } catch (e) {
+      console.error(e);
+    }
   }
 );
 

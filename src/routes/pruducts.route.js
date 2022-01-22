@@ -54,10 +54,7 @@ router.put(
       const product = await services.update(id, body);
       res.json(product);
     } catch (e) {
-      res.json({
-        message: 'product not found',
-        id,
-      });
+      next(e);
     }
   }
 );
