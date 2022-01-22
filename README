@@ -1,0 +1,31 @@
+En este archivo voy a explica la estructura de los endpoints utilizados en el proyecto.
+
+Este endpoints es el encargado de mostrar la lista de productos.
+GET = http://localhost:5000/api/v1/products/
+
+Este endpoints es el encargado de crear un nuevo producto.
+POST = http://localhost:5000/api/v1/products/
+
+Este endpoints es el encargado de actualizar un producto.
+PUT = http://localhost:5000/api/v1/products/<_id del pruducto>
+
+Este endpoints es el encargado de eliminar un producto
+DELETE = http://localhost:5000/api/v1/products/<_id del pruducto>
+
+Este endpoints es el encargado de mostrar la lista de productos en el carrito de compras.
+GET = http://localhost:5000/api/v1/cart/
+
+Este endpoints es el encargado de crear una lista de productos en el carrito de compras.
+POST = http://localhost:5000/api/v1/cart/<_id del pruducto>
+
+Este endpoints es el encargado de agregar mas productos a la lista de productos del carrito de compras.
+PUT = http://localhost:5000/api/v1/cart/<_id cart>/product/<_id del pruducto>
+
+Este endpoints es el encargado de eliminar un producto a la lista de productos del carrito de compras.
+PUT = http://localhost:5000/api/v1/cart/<_id cart>/product/<_id del pruducto>
+
+Este endpoints es el encargado de eliminar un lo seleccionado por el usuario.
+DELETE = http://localhost:5000/api/v1/cart/<_id del cart>
+
+adicional se deja el archivo ce configuracion del insomnia para hacer la prueba de los endpoints
+pruebaExpress.json.
