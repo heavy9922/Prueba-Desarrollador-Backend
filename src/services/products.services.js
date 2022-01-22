@@ -22,8 +22,6 @@ class ProductsServices {
   }
 
   async update(id, changes) {
-    console.log(changes);
-    console.log(id)
     const upProduct = await products.findByIdAndUpdate(
       id,
       { $set: changes },
