@@ -1,0 +1,344 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-01-22T04:44:19.687Z",
+  "__export_source": "insomnia.desktop.app:v2021.7.2",
+  "resources": [
+    {
+      "_id": "req_16593d840b584103862e04added7e026",
+      "parentId": "fld_70367e09c1a040f0a51df2d4ce6821db",
+      "modified": 1642822532489,
+      "created": 1642818022134,
+      "url": "http://localhost:3000/api/v1/cart/",
+      "name": "get",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1642817782650,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_70367e09c1a040f0a51df2d4ce6821db",
+      "parentId": "fld_9222f4e0451f4277a4b1b64450ab76c5",
+      "modified": 1642818009403,
+      "created": 1642818009403,
+      "name": "shoppingCart",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1642818009403,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_9222f4e0451f4277a4b1b64450ab76c5",
+      "parentId": "wrk_a3b0e412ddf84661b8cb42742bd8f0f7",
+      "modified": 1642826442127,
+      "created": 1642817766687,
+      "name": "prueba-express",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": {},
+      "metaSortKey": -1642817766687,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_a3b0e412ddf84661b8cb42742bd8f0f7",
+      "parentId": null,
+      "modified": 1631825182573,
+      "created": 1631825182573,
+      "name": "pruduc rest api",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_415632437c7a49d7b9a62d7baf4dbaa7",
+      "parentId": "fld_70367e09c1a040f0a51df2d4ce6821db",
+      "modified": 1642826359466,
+      "created": 1642818819230,
+      "url": "http://localhost:3000/api/v1/cart/61eb6950dcf6bc5232a77cdc",
+      "name": "create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\t\"fullName\": \"lucia chaves\",\n\t\t\"quantity\":2\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_873493bfb8a54aa4ad2b6e2df2beea83"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1642817782600,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7e067d2d482548fb8864e3a0dd285f9d",
+      "parentId": "fld_70367e09c1a040f0a51df2d4ce6821db",
+      "modified": 1642826393332,
+      "created": 1642821623829,
+      "url": "http://localhost:3000/api/v1/cart/61eb8a7cb7975271c3d41898/product/61eb4e0a1f83223c995579b2",
+      "name": "add new product",
+      "description": "",
+      "method": "PUT",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_873493bfb8a54aa4ad2b6e2df2beea83"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1642817782596.875,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_edf468b43d2147789997c7c191c3b79f",
+      "parentId": "fld_70367e09c1a040f0a51df2d4ce6821db",
+      "modified": 1642826420072,
+      "created": 1642825881207,
+      "url": "http://localhost:3000/api/v1/cart/61eb8a7cb7975271c3d41898/item/product/61eb4e0a1f83223c995579b2",
+      "name": "delete item",
+      "description": "",
+      "method": "PUT",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_873493bfb8a54aa4ad2b6e2df2beea83"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1642817782595.3125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_0c14880626e44ab991543d3fac2fc165",
+      "parentId": "fld_70367e09c1a040f0a51df2d4ce6821db",
+      "modified": 1642825996277,
+      "created": 1642819057515,
+      "url": "http://localhost:3000/api/v1/cart/61eb88e96da2c4698159ed32",
+      "name": "delete",
+      "description": "",
+      "method": "DELETE",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_873493bfb8a54aa4ad2b6e2df2beea83"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1642817782593.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b0ca496281ec4062b17fe3d9b7076b4f",
+      "parentId": "fld_a25a04485fe3479e9182270251e66279",
+      "modified": 1642817985275,
+      "created": 1642817782575,
+      "url": "http://localhost:3000/api/v1/products/",
+      "name": "products",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1642817782675,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_a25a04485fe3479e9182270251e66279",
+      "parentId": "fld_9222f4e0451f4277a4b1b64450ab76c5",
+      "modified": 1642817975977,
+      "created": 1642817975977,
+      "name": "products",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1642817975977,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_ddcb6ecd89c1459a826db4350aa35eef",
+      "parentId": "fld_a25a04485fe3479e9182270251e66279",
+      "modified": 1642817979959,
+      "created": 1642817844978,
+      "url": "http://localhost:3000/api/v1/products/",
+      "name": "create product",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\t\"name\": \"new productm pr\",\n\t\t\"price\": 20000,\n\t\t\"image\": \"http://placeimg.com/640/480\",\n\t\t\"stock\": 100,\n\t\t\"description\":\"ashdjahsdkjahskdja akshdklashd ahsd\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_873493bfb8a54aa4ad2b6e2df2beea83"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1642817782625,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c8be4931be1d4560974d811c82c68bb3",
+      "parentId": "fld_a25a04485fe3479e9182270251e66279",
+      "modified": 1642817981470,
+      "created": 1642817921611,
+      "url": "http://localhost:3000/api/v1/products/61eb4a38776c59f6e3f50827",
+      "name": "update product",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\t\"name\": \"new productm pr\",\n\t\t\"price\": 20000,\n\t\t\"image\": \"http://placeimg.com/640/480\",\n\t\t\"stock\": 100,\n\t\t\"description\":\"ashdjahsdkjahskdja akshdklashd ahsd\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_873493bfb8a54aa4ad2b6e2df2beea83"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1642817782600,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_361f02ca4bab4eb88c5a12747f9157fb",
+      "parentId": "fld_a25a04485fe3479e9182270251e66279",
+      "modified": 1642817983405,
+      "created": 1642817955375,
+      "url": "http://localhost:3000/api/v1/products/61eb4a38776c59f6e3f50827",
+      "name": "detele product",
+      "description": "",
+      "method": "DELETE",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_873493bfb8a54aa4ad2b6e2df2beea83"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1642817782587.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_e844980867fbc0bf7a76ebf8bfa249c7090a19fd",
+      "parentId": "wrk_a3b0e412ddf84661b8cb42742bd8f0f7",
+      "modified": 1631825182583,
+      "created": 1631825182583,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1631825182583,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_e844980867fbc0bf7a76ebf8bfa249c7090a19fd",
+      "parentId": "wrk_a3b0e412ddf84661b8cb42742bd8f0f7",
+      "modified": 1631825182586,
+      "created": 1631825182586,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_33924863589d45eeabe89762c50a6e0a",
+      "parentId": "wrk_a3b0e412ddf84661b8cb42742bd8f0f7",
+      "modified": 1631825182575,
+      "created": 1631825182575,
+      "fileName": "pruduc rest api",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}

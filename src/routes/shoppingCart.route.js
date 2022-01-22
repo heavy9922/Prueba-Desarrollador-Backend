@@ -37,6 +37,20 @@ router.put(
   }
 );
 
+router.put(
+  '/:id/item/product/:idProduct',
+  async (req, res) => {
+    try {
+      const { id, idProduct  } = req.params;
+      const product = await services.deleteItemCart(id, idProduct );
+      res.json(product);
+    } catch (e) {
+      console.error(e);
+    }
+  }
+);
+
+
 router.delete('/:id', async (req, res) => {
   const { id } = req.params;
   const rta = await services.delete(id);

@@ -18,6 +18,7 @@ class shoppingCartServices {
     const newCart = shoppingCart(data);
     const product = await services.findOne(idProduct);
     let object = {
+      id:product.id,
       name: product.name,
       description: product.description,
       price: product.price,
@@ -42,6 +43,21 @@ class shoppingCartServices {
     newProduct.push(object);
     const upCart = await shoppingCart
       .findByIdAndUpdate(id, { $push: { products: newProduct } }, { new: true })
+      .exec();
+    return upCart;
+  }
+
+  async deleteItemCart(id, idProduct) {
+    const findProduct = await shoppingCart.findById(id)
+    let removeItem  = findProduct.products
+    console.log(removeItem.length, 1)
+    let found = removeItem.find(item => item.id === idProduct)
+    if(found){
+      removeItem.pull(found)
+    }
+    console.log(removeItem.length)
+    const upCart = await shoppingCart
+      .findByIdAndUpdate(id, { $set: { products: removeItem } }, { new: true })
       .exec();
     return upCart;
   }
